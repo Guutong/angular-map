@@ -1,4 +1,4 @@
-import { Component, OnInit, VERSION } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import DottedMap from 'dotted-map';
 
@@ -16,11 +16,11 @@ export class AppComponent implements OnInit {
   }
 
   createMap() {
-    const map = new DottedMap({ height: 100, grid: 'diagonal' });
+    const map = new DottedMap({ height: 90, grid: 'diagonal' });
     const svgMap = map.getSVG({
-      radius: 0.2,
+      radius: 0.22,
       color: '#1FBC62',
-      shape: 'circle',
+      shape: 'hexagon',
       backgroundColor: '#F6FCF9'
     });
     this.worldMap = this.sanitizer.bypassSecurityTrustHtml(svgMap);
