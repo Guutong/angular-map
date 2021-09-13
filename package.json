@@ -11,6 +11,7 @@
     "@angular/platform-browser": "^12.1.0",
     "@angular/platform-browser-dynamic": "^12.1.0",
     "@angular/router": "^12.1.0",
+    "d3": "^7.0.1",
     "dotted-map": "^2.1.1",
     "rxjs": "^7.1.0",
     "tslib": "^2.3.0",
